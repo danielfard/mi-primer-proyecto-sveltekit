@@ -27,10 +27,8 @@ export const actions = {
             });
             throw redirect(302, '/dashboard');
         }
-        
-        return fail(400, {
-            error: 'Credenciales inválidas'
-        });
+
+        return fail(400, { form });
 
 
     }

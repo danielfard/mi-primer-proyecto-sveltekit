@@ -6,15 +6,16 @@
     let { data } = $props();
 
     const { form, errors, enhance } = superForm(data.loginForm);
-
+    
 </script>
 
-<div class="flex flex-col border rounded-xl shadow-md p-4 border-gray-300 gap-4">
+<div
+    class="flex flex-col border rounded-xl shadow-md p-4 border-gray-300 gap-4"
+>
     <h1>Login</h1>
     <h1>Counter: {$counter}</h1>
     <button onclick={() => counter.update((c) => c + 1)}>Increment</button>
 </div>
-
 
 <div class="flex flex-col items-center justify-center h-screen">
     <div
@@ -41,7 +42,9 @@
                 class="border-2 border-gray-300 rounded-md p-2"
             />
             <p class="text-red-500">{$errors?.password?.[0]}</p>
-            <button type="submit" class="bg-blue-500 text-white rounded-md p-2"
+            <button
+                type="submit"
+                class="bg-blue-500 text-white rounded-md p-2 cursor-pointer"
                 >Login</button
             >
         </form>
